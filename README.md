@@ -1,16 +1,16 @@
 # InkSCSS
 
-A SCSS port of [Ink - Interface Kit](https://github.com/sapo/Ink)
+## A SCSS port of [Ink - Interface Kit](https://github.com/sapo/Ink)
 
 ***
 
-## Todo:
+### Todo:
 
-- [ ] Layout
-- [ ] Navigation
-- [ ] Typography
-- [ ] Icons
-- [ ] Forms
-- [ ] Alerts
-- [ ] Tables
-- [ ] JS/UI Components
+- Layout
+- Navigation
+- Typography
+- Icons
+- Forms
+- Alerts
+- Tables
+- JS/UI Components

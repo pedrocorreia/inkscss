@@ -46,9 +46,7 @@
 // generates the grid column grouping container
 @mixin generate-column-group-container($gutter-width) {
 
-    .#{$grid-column-group-class-name} {
-        clear: both;
-        zoom: 1;
+    .#{$grid-column-group-class-name} {        
         @include clearfix;
     }
 
@@ -58,6 +56,10 @@
 
     .#{$grid-column-group-class-name}.#{$grid-half-gutters-class-name} {
         margin-left: -($gutter-width / 2);
+    }
+
+    .#{$grid-column-group-class-name}.#{$grid-quarter-gutters-class-name} {
+        margin-left: -($gutter-width / 4);
     }
 }
 
@@ -83,16 +85,62 @@
     .#{$class-name}-align-right {
         text-align: right;
     }
-    .space {
-        margin: $gutter-width;
-    }
-    .vspace {
-        margin-top: $gutter-width;
-        margin-bottom: $gutter-width;
-    }
-    .hspace {
-        margin-left: $gutter-width;
-        margin-right: $gutter-width;
+    // . {
+    //     margin: $gutter-width;
+    // }
+    // . {
+    //     margin-top: $gutter-width;
+    //     margin-bottom: $gutter-width;
+    // }
+    // . {
+    //     margin-left: $gutter-width;
+    //     margin-right: $gutter-width;
+    // }
+}
+
+@mixin generate-visibility-classes ($class-name) {
+    
+    @each $breakpoint in $breakpoints {
+        $loop-class-name: nth($breakpoint,5);
+          .for-#{$loop-class-name} {
+            @if $loop-class-name == $class-name {
+                display: block;
+            }
+            @else {
+                display: none;
+            }
+          }
+        table {
+            &.for-#{$loop-class-name} {
+                @if $loop-class-name == $class-name {
+                    display: table;
+                }
+                @else {
+                    display: none;
+                }
+              }
+        }
+        tr {
+            &.for-#{$loop-class-name} {
+                @if $loop-class-name == $class-name {
+                    display: table-row;
+                }
+                @else {
+                    display: none;
+                }
+              }
+        }
+
+        th, td {
+            &.for-#{$loop-class-name} {
+                @if $loop-class-name == $class-name {
+                    display: table-cell;
+                }
+                @else {
+                    display: none;
+                }
+              }
+        }
     }
 }
 
@@ -113,6 +161,7 @@
                 @include generate-grid-divisions ($class-name);
                 @include generate-column-group-container($gutter-width);
                 @include generate-grid-helper-classes($class-name,$gutter-width);
+                @include generate-visibility-classes($class-name);
             }
         }
 
@@ -122,6 +171,7 @@
                 @include generate-grid-divisions ($class-name);
                 @include generate-column-group-container($gutter-width);
                 @include generate-grid-helper-classes($class-name,$gutter-width);
+                @include generate-visibility-classes($class-name);                
             }
         }
 
@@ -130,6 +180,7 @@
                 @include generate-grid-container ($grid-container-class-name, $site-max-width, $gutter-width);
                 @include generate-grid-divisions ($class-name);
                 @include generate-column-group-container($gutter-width);
+                @include generate-visibility-classes($class-name);                
             }
         }
 
@@ -138,6 +189,7 @@
             @include generate-grid-divisions ($class-name);
             @include generate-column-group-container($gutter-width);
             @include generate-grid-helper-classes($class-name,$gutter-width);
+            @include generate-visibility-classes($class-name);            
         }
     }
 }

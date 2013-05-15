@@ -320,6 +320,74 @@ table {
   .column-group.half-gutters {
     margin-left: -0.75em;
   }
+
+  .column-group.quarter-gutters {
+    margin-left: -0.375em;
+  }
+
+  .for-small {
+    display: block;
+  }
+
+  table.for-small {
+    display: table;
+  }
+
+  tr.for-small {
+    display: table-row;
+  }
+
+  th.for-small, td.for-small {
+    display: table-cell;
+  }
+
+  .for-medium {
+    display: none;
+  }
+
+  table.for-medium {
+    display: none;
+  }
+
+  tr.for-medium {
+    display: none;
+  }
+
+  th.for-medium, td.for-medium {
+    display: none;
+  }
+
+  .for-extra-large {
+    display: none;
+  }
+
+  table.for-extra-large {
+    display: none;
+  }
+
+  tr.for-extra-large {
+    display: none;
+  }
+
+  th.for-extra-large, td.for-extra-large {
+    display: none;
+  }
+
+  .for-large {
+    display: none;
+  }
+
+  table.for-large {
+    display: none;
+  }
+
+  tr.for-large {
+    display: none;
+  }
+
+  th.for-large, td.for-large {
+    display: none;
+  }
 }
 @media screen and (min-width: 651px) and (max-width: 959px) {
   .ink-grid {
@@ -437,6 +505,10 @@ table {
     margin-left: -0.875em;
   }
 
+  .column-group.quarter-gutters {
+    margin-left: -0.4375em;
+  }
+
   .medium-push-left {
     float: left;
   }
@@ -463,18 +535,68 @@ table {
     text-align: right;
   }
 
-  .space {
-    margin: 1.75em;
+  .for-small {
+    display: none;
   }
 
-  .vspace {
-    margin-top: 1.75em;
-    margin-bottom: 1.75em;
+  table.for-small {
+    display: none;
   }
 
-  .hspace {
-    margin-left: 1.75em;
-    margin-right: 1.75em;
+  tr.for-small {
+    display: none;
+  }
+
+  th.for-small, td.for-small {
+    display: none;
+  }
+
+  .for-medium {
+    display: block;
+  }
+
+  table.for-medium {
+    display: table;
+  }
+
+  tr.for-medium {
+    display: table-row;
+  }
+
+  th.for-medium, td.for-medium {
+    display: table-cell;
+  }
+
+  .for-extra-large {
+    display: none;
+  }
+
+  table.for-extra-large {
+    display: none;
+  }
+
+  tr.for-extra-large {
+    display: none;
+  }
+
+  th.for-extra-large, td.for-extra-large {
+    display: none;
+  }
+
+  .for-large {
+    display: none;
+  }
+
+  table.for-large {
+    display: none;
+  }
+
+  tr.for-large {
+    display: none;
+  }
+
+  th.for-large, td.for-large {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -593,6 +715,10 @@ table {
     margin-left: -1.125em;
   }
 
+  .column-group.quarter-gutters {
+    margin-left: -0.5625em;
+  }
+
   .extra-large-push-left {
     float: left;
   }
@@ -619,18 +745,68 @@ table {
     text-align: right;
   }
 
-  .space {
-    margin: 2.25em;
+  .for-small {
+    display: none;
   }
 
-  .vspace {
-    margin-top: 2.25em;
-    margin-bottom: 2.25em;
+  table.for-small {
+    display: none;
   }
 
-  .hspace {
-    margin-left: 2.25em;
-    margin-right: 2.25em;
+  tr.for-small {
+    display: none;
+  }
+
+  th.for-small, td.for-small {
+    display: none;
+  }
+
+  .for-medium {
+    display: none;
+  }
+
+  table.for-medium {
+    display: none;
+  }
+
+  tr.for-medium {
+    display: none;
+  }
+
+  th.for-medium, td.for-medium {
+    display: none;
+  }
+
+  .for-extra-large {
+    display: block;
+  }
+
+  table.for-extra-large {
+    display: table;
+  }
+
+  tr.for-extra-large {
+    display: table-row;
+  }
+
+  th.for-extra-large, td.for-extra-large {
+    display: table-cell;
+  }
+
+  .for-large {
+    display: none;
+  }
+
+  table.for-large {
+    display: none;
+  }
+
+  tr.for-large {
+    display: none;
+  }
+
+  th.for-large, td.for-large {
+    display: none;
   }
 }
 .ink-grid {
@@ -748,6 +924,10 @@ table {
   margin-left: -1em;
 }
 
+.column-group.quarter-gutters {
+  margin-left: -0.5em;
+}
+
 .large-push-left {
   float: left;
 }
@@ -774,16 +954,66 @@ table {
   text-align: right;
 }
 
-.space {
-  margin: 2em;
+.for-small {
+  display: none;
 }
 
-.vspace {
-  margin-top: 2em;
-  margin-bottom: 2em;
+table.for-small {
+  display: none;
 }
 
-.hspace {
-  margin-left: 2em;
-  margin-right: 2em;
+tr.for-small {
+  display: none;
+}
+
+th.for-small, td.for-small {
+  display: none;
+}
+
+.for-medium {
+  display: none;
+}
+
+table.for-medium {
+  display: none;
+}
+
+tr.for-medium {
+  display: none;
+}
+
+th.for-medium, td.for-medium {
+  display: none;
+}
+
+.for-extra-large {
+  display: none;
+}
+
+table.for-extra-large {
+  display: none;
+}
+
+tr.for-extra-large {
+  display: none;
+}
+
+th.for-extra-large, td.for-extra-large {
+  display: none;
+}
+
+.for-large {
+  display: block;
+}
+
+table.for-large {
+  display: table;
+}
+
+tr.for-large {
+  display: table-row;
+}
+
+th.for-large, td.for-large {
+  display: table-cell;
 }
